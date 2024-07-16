@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> hover / focus & nth-child selector </title>
+    <style>
+        h2:hover{
+            /* background-color: antiquewhite; */
+            /* text-align: center; */
+            color:red;
+        }
+        a:visited{
+            color: blue;
+        }
+        input:focus{
+            color:red;
+            /* padding-left: 10px; */
+            outline: 0;
+            border: 1px solid plum;
+            border-radius: 2px;
+        }
+        /* li:first-child{
+            color:blue
+        } */
+        /* li:last-child{
+            color:orange;
+        } */
+
+         /* li:nth-child(even){
+            color: red;
+         } */
+
+         /* li:nth-child(odd){
+            color: coral;
+         } */
+
+         li:nth-child(4n+1){
+            color: brown;
+         }
+    </style>
+</head>
+<body>
+    <h2>Hello,there.How are you?</h2>
+    <!-- text color will be yellow when link is visited -->
+    <a href="https://www.google.com/">Google</a> <br>
+    <a href="https://www.facebook.com">facebook</a>  <br>
+    <a href="https://www.facebook.com">facbook</a> <br>
+    <a href="https://www.youtube.com">youtube</a> <br> <br>
+    <!-- border value will changed when focus on it  -->
+     <input type="text" placeholder="your name"> <br> <br>
+     <input type="text" placeholder="your mail"> <br> <br>
+     <input type="text" placeholder="address"> <br> <br>
+     <ul>
+        <li>1 X 1=?</li>
+        <li>2 X 2=?</li>
+        <li>3 X 3=?</li>
+        <li>4 X 4=?</li>
+        <li>5 X 5=?</li>
+        <li>6 X 6=?</li>
+        <li>7 X 7=?</li>
+        <li>8 X 8=?</li>
+     </ul>
+</body>
+</html>
